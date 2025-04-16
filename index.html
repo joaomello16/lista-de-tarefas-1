@@ -13,27 +13,25 @@
     <button onclick="add()" >enviar</button>
 
     <script>
-        const tarefas = ['Estudar HTML','Java 2']
-        function add(){
-            const input = document.querySelector('input')
-            const tarefa = input.value
-            tarefas.push(tarefa)
-            input.value = ''
-            render()
-        }
+      const tarefas = ["Estudar Html", 'css']
 
-        function render(){
-            const ul = document.querySelector('ul')
-            ul.innerHTML = null
-            tarefas.forEach (function (tarefa){
-                const li = document.createElement('li')
-                li.innerText = tarefa
-                ul.appendChild(li)
-
-            })
-            
-        }
+      function add(){
+        const input = document.querySelector('input')
+        const tare = input.value
+        tarefas.push(tare)
+        input.value = ''
         render()
+      }
+
+      function render(){
+        const ul = document.querySelector('ul')
+        ul.innerHTML = null
+        tarefas.forEach (function (a){
+            const li = document.createElement('li')
+            li.innerText = a
+            ul.appendChild(li)
+        })
+      }
     </script>
 </body>
 </html>
