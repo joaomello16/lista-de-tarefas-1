@@ -15,7 +15,8 @@
   }
   div{
     margin-top: 10px;
-    width: 75%;
+    width: 80%;
+    max-width: 850px;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -27,12 +28,14 @@
     font-family: 'Times New Roman', Times, serif;
     
   }
+  
   header{
     padding: 15px;
   }
  
   main{
-    width: 75%;
+    width: 80%;
+    max-width: 850px;
     flex: auto;
     
   }
@@ -71,10 +74,10 @@
   }
 
   @media (max-width: 768px ){
-    div{
-        width: 80%;
+    h1{
+        font-size: 30px;
     }
-    main{
-        width: 80%;
+    input{
+        height: 30px;
     }
   }
