@@ -3,50 +3,27 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    *{
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
-    }
-    body{
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      border: 6px solid black;
-      
-    }
-    header{
-      background-color: aqua;
-      text-align: center;
-    }
-    main{
-      background-color: aquamarine;
-      flex: auto;
-    }
-    footer{
-      display: flex;
-    }
-    input{
-      flex: auto;
-    }
-  </style>
+  <title>Lista de tarefas</title>
+  <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-  <header>
-    <h1>Tarefas</h1>
-  </header>
+  <div >
+    <header>
+      <h1>Lista de tarefas</h1>
+    </header>
+    <footer>
+      <input placeholder=" Adicione uma tarefa" >
+      <button onclick="add()" >ENVIAR</button>
+    </footer>
+  </div>
+  
   <main>
     <ul></ul>
   </main>
-  <footer>
-    <input>
-    <button onclick="add()" >enviar</button>
-  </footer>
 
     <script>
-      const tarefas = ['Estuda HTML', 'Estudar CSS', 'Estudar JS']
+      const tarefas = []
 
       function add(){
         const input = document.querySelector('input')
@@ -66,6 +43,13 @@
           ul.appendChild(li)
         })
       }
+
+      document.addEventListener('keydown', (event) =>{
+        if(event.key === 'Enter'){
+          add()
+        }
+      })
+
       render()
     </script>
 
