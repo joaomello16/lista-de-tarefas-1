@@ -28,6 +28,7 @@
       function add(){
         const input = document.querySelector('input')
         const t = input.value
+        if (t.trim() === '') return
         tarefas.push(t)
         console.log(tarefas)
         input.value =''
