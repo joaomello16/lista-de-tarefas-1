@@ -14,7 +14,7 @@
     </header>
     <footer>
       <input placeholder=" Adicione uma tarefa" >
-      <button onclick="add()" >ENVIAR</button>
+      <button onclick="add()" >ADICIONAR</button>
     </footer>
   </div>
   
@@ -29,7 +29,6 @@
         const input = document.querySelector('input')
         const t = input.value
         tarefas.push(t)
-        console.log(tarefas)
         input.value =''
         render()
       }
