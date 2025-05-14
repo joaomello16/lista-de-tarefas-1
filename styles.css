@@ -30,6 +30,7 @@
     text-align: center;
     row-gap: 10px;
     box-shadow: 6px 5px 1px 0px rgba(128, 128, 128, 0.521);
+    border: 1px solid black;
     
   }
   
@@ -53,13 +54,14 @@
     margin-block-start: 15px;
     box-shadow: 6px 5px 1px 0px rgba(128, 128, 128, 0.473);
     justify-content: space-between;
+    border: 1px solid black;
     
   }
   footer{
     display: flex;
   }
   input{
-    border: 1px solid rgba(0, 0, 0, 0.151);
+    border: 1px solid gray;
     width: 80%;
     padding: 15px;
     font-size: 15px;
