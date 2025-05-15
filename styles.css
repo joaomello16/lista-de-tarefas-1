@@ -59,6 +59,7 @@
   }
   footer{
     display: flex;
+    background-color: aqua;
   }
   input{
     border: 1px solid gray;
