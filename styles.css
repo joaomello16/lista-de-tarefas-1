@@ -1,81 +1,84 @@
-
-* {
+*{
   padding: 0;
   margin: 0;
-  box-sizing:  border-box;
+  box-sizing: border-box;
+  list-style: none;
 }
 body{
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
   align-items: center;
   background-color: whitesmoke;
 }
 header{
-margin-top: 40px;
-background-color: white;
-padding: 20px;
-width: 80%;
-text-align: center;
-border-radius: 5px;
-border: 1px solid black;
-box-shadow: 5px 5px 5px gray;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: white;
+  border: 1px solid black;
+  width: 80%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px gray;
+  text-align: center;
 }
 h1{
   padding: 10px;
-  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  font-family: Arial, Helvetica, sans-serif;
 }
-.c-input{
+#c-input{
   width: 100%;
   display: flex;
 }
-.inputT{
-  width: 80%;
+#inputAdd{
   padding: 10px;
+  width: 80%;
   border-radius: 5px;
   outline: none;
   border: 1px solid black;
 }
-.btnAdd{
-  width: 20%;
-  margin-left: 15px;
+#btnAdd{
   border: none;
   background: none;
+  width: 20%;
   color: blue;
-  cursor: pointer;
   border-radius: 5px;
+  margin-left: 10px;
 }
-.btnAdd:hover{
-  background-color: rgb(0, 0, 255, 0.1);
+#btnAdd:hover{
+  background-color: rgb(1, 1, 252, 0.1);
 }
 ul{
   width: 80%;
-  margin-top: 25px;
-  list-style: none;
+  margin-top: 20px;
+
 }
 li{
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  padding: 13px;
   background-color: white;
   border: 1px solid black;
-  margin-top: 15px;
-  padding: 10px;
+  margin-top: 10px;
   border-radius: 5px;
   box-shadow: 5px 5px 5px gray;
-  font-size: 18x;
+
 }
-.btnExcluir{
+.btn{
   border: none;
   background: none;
   color: red;
-  cursor: pointer;
+  border-radius: 5px;
+  padding: 2px;
 }
-.section2{
-  display: flex;
+.btn:hover{
+  background-color: rgb(250, 1, 1, 0.1);
 }
-.checkbox{
+#checkbox{
   width: 20px;
   height: 20px;
   margin-right: 10px;
 }
-
+span{
+  font-size: 20px;
+}
