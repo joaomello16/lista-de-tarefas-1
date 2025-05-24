@@ -5,73 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lista de tarefas</title>
   <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
 </head>
 
 <body>
-  <div >
+  
     <header>
       <h1>Lista de tarefas</h1>
+      <div class="c-input">
+        <input class="inputT" placeholder=" Adicione uma tarefa" >
+        <button class="btnAdd" onclick="add()" >ADICIONAR</button>
+      </div>
     </header>
-    <footer>
-      <input placeholder=" Adicione uma tarefa" >
-      <button onclick="add()" >ADICIONAR</button>
-    </footer>
-  </div>
+
+    <ul>
+    </ul>
   
-  <main>
-    <ul></ul>
-  </main>
-
-    <script>
-      let tarefas = JSON.parse(localStorage.getItem('tarefas')) || []
-
-      function salvar(){
-        localStorage.setItem('tarefas', JSON.stringify(tarefas))
-      }
-
-      function add(){
-        const input = document.querySelector('input')
-        const t = input.value
-        if (t.trim() === '') return
-        tarefas.push(t)
-        input.value =''
-        salvar()
-        render()
-      }
-
-      function remove(index){
-        tarefas.splice(index, 1)
-        salvar()
-        render()
-      }
-
-      function render(){
-        const ul = document.querySelector('ul')
-        ul.innerHTML = null
-        tarefas.forEach(function (tarefa, index){
-          const li = document.createElement('li')
-          li.innerText = tarefa
-          
-          
-          const botao = document.createElement('button')
-          botao.innerText = 'Excluir'
-          botao.onclick = function(){
-            remove(index)
-          }
-          ul.appendChild(li)
-          li.appendChild(botao)
-        }
-
-      )}
-
-      document.addEventListener('keydown', (event) =>{
-        if(event.key === 'Enter'){
-          add()
-        }
-      })
-
-      render()
-    </script>
-
+  <script src="./script.js"></script>
 </body>
 </html>
