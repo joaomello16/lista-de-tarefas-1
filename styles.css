@@ -17,6 +17,7 @@ header{
   background-color: white;
   border: 1px solid black;
   width: 80%;
+  max-width: 880px;
   border-radius: 5px;
   box-shadow: 5px 5px 5px gray;
   text-align: center;
@@ -51,6 +52,7 @@ h1{
 ul{
   width: 80%;
   margin-top: 20px;
+  max-width: 880px;
 
 }
 li{
@@ -62,6 +64,7 @@ li{
   margin-top: 10px;
   border-radius: 5px;
   box-shadow: 5px 5px 5px gray;
+  
 
 }
 .btn{
