@@ -13,8 +13,9 @@ function add() {
     console.log(tarefas)
 
     input.value = ''
-    render()
     salvar()
+    render()
+    
 }
 
 function render() {
@@ -39,14 +40,15 @@ function render() {
 
         btnExcluir.onclick = function () {
             tarefas.splice(index, 1)
+            salvar()
             render()
         }
         btnEditar.onclick = function () {
             const novaTarefa = prompt('Digite sua tarefa')
             if (novaTarefa !== null) {
                 t.texto = novaTarefa
-                render()
                 salvar()
+                render()
             }
         }
         checkbox.checked = t.feito
